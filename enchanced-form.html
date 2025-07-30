@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Alexandre Sumbane" />
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the HTML5 Showcase</h1>
+    <p>This page demonstrates lists, tables, embedded media, and a well-structured, validated form.</p>
+  </header>
+
+  <main>
+    <!-- Lists Section -->
+    <section>
+      <h2>Top 5 Favorite Hobbies</h2>
+      <ol>
+        <li>Reading</li>
+        <li>Photography</li>
+        <li>Cycling</li>
+        <li>Gardening</li>
+        <li>Cooking</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Weekly Workout Schedule</h2>
+      <table border="1">
+        <caption>Workout Plan</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Running</td>
+            <td>30 min</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Yoga</td>
+            <td>45 min</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Strength Training</td>
+            <td>40 min</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Sample Media</h2>
+      <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Nature scene" />
+        <figcaption>Nature is relaxing and beautiful.</figcaption>
+      </figure>
+
+      <h3>Listen to Relaxing Audio</h3>
+      <audio controls>
+        <source src="relaxing-audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Watch Our Introduction Video</h3>
+      <video controls width="320" height="240">
+        <source src="intro-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form action="#" method="POST" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Your Name" required minlength="3" />
+
+          <br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+          <br />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{9,}" placeholder="Phone number" required />
+
+          <br />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <br />
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="mz">Mozambique</option>
+            <option value="pt">Portugal</option>
+            <option value="br">Brazil</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Preferences</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="5" maxlength="15" />
+
+          <br />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="8" />
+
+          <br />
+
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color" />
+
+          <br />
+
+          <label for="newsletter">Subscribe to newsletter:</label>
+          <input type="checkbox" id="newsletter" name="newsletter" checked />
+        </fieldset>
+
+        <fieldset>
+          <legend>Feedback</legend>
+          <label for="comments">Your comments:</label><br />
+          <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Tell us what you think..." required></textarea>
+        </fieldset>
+
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alexandre Sumbane. All rights reserved.</p>
+  </footer>
+</body>
+</html>
